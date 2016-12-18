@@ -1,0 +1,135 @@
+@font-face {font-family:"Lobster1.4";src:url("../fonts/Lobster1_4/Lobster_1_4.eot?") format("eot"),url("../fonts/Lobster1_4/Lobster_1_4.woff") format("woff"),url("../fonts/Lobster1_4/Lobster_1_4.ttf") format("truetype");font-weight:normal;font-style:normal;}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.clearfix:after{
+	content:"";
+	clear:both;
+	display:block;
+	height:0;
+}
+
+.container{
+	width:1170px;
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+	box-sizing:border-box;
+	
+	
+	
+}
+.logo{
+	font-family:"Lobster1.4";
+	font-size:43px;
+	color:#44c0c2;
+	display:block;
+	padding-top:20px;
+	padding-bottom:20px;
+	text-decoration:none;
+	float:left;
+}
+
+nav{
+	float:right;
+	
+}
+.navbar{
+	overflow:hidden;
+
+
+
+}
+
+.navbar li{
+	
+	float:left;
+	
+}
+
+.navbar li:hover{
+	background:#f8f9fb;
+	
+}
+
+
+.navbar li a{
+	text-decoration:none;
+	padding-top:45px;
+	padding-bottom:45px;
+	padding-left:25px;
+	padding-right:25px;
+	font-family: 'Open Sans', sans-serif;
+	font-size:15px;
+	color:#484c55;
+	display:inline-block;
+	
+	
+
+}
+
+.navbar li a:hover {
+	
+	color:#49cbcd;
+	box-shadow: inset -2px -5px 0px -2px #49cbcd;
+	
+
+}
+
+.navbar li{
+	float: right;
+	display:inline-block;
+}
+
+ul.navbar li.icon {
+	font-size:17px;
+	display: none;
+	}
