@@ -202,6 +202,7 @@ body {
 	font-weight:600;
 	font-size:26px;
 	color:#fff;
+	cursor:pointer;
 }
 
 
@@ -285,4 +286,64 @@ body {
 	cursor:pointer;
 	border-radius:3px;
 	background:#49cbcd;
+}
+
+.wrapper{
+	background:#f1f1f1;
+}
+
+.Portfolio_Title{
+	display:block;
+	text-align:center;
+	font-size:42px;
+	color:#4e525d;
+	padding:60px 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.portfolio-image1,.portfolio-image2, .portfolio-image3, .portfolio-image4, .portfolio-image5, .portfolio-image6{
+	display:inline-block;
+	background:#ac94da;
+	height:314px;
+	width:370px;
+	overflow:hidden;
+	margin-bottom:17px;
+}
+
+.portfolio-image1{
+	
+	background-image:url(../images/portfolio_pic1.png);
+	
+}
+
+.portfolio-image2{
+	
+	background-image:url(../images/portfolio_pic2.png);
+	
+}
+
+.portfolio-image3{
+	
+	background-image:url(../images/portfolio_pic3.png);
+	
+}
+
+.portfolio-image4{
+	
+	background-image:url(../images/portfolio_pic4.png);
+	
+}
+
+.portfolio-image5{
+	
+	background-image:url(../images/portfolio_pic5.png);
+	
+}
+
+.portfolio-image6{
+	
+	background-image:url(../images/portfolio_pic6.png);
+		
 }
