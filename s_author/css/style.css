@@ -25,10 +25,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
+
 ol, ul {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 blockquote, q {
@@ -44,92 +44,245 @@ table {
 	border-spacing: 0;
 }
 
+a {
+	text-decoration: none;
+}
+
 * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-
-.clearfix:after{
-	content:"";
-	clear:both;
-	display:block;
-	height:0;
+html {
+	height: 100%;  
 }
+
+body {
+	
+	margin: 0;
+	padding: 0;
+	height: 100%; 
+	line-height: 1;
+}
+
+
 
 .container{
-	width:1170px;
-	padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-	box-sizing:border-box;
-	
-	
-	
+	width: 1170px;
+	display: table;
+	margin: 0 auto;
 }
-.logo{
+
+.header .logo {
 	font-family:"Lobster1.4";
+	font-size:43px;
+	padding: 30px 0;
+}
+
+.header .logo a {
 	font-size:43px;
 	color:#44c0c2;
 	display:block;
-	padding-top:20px;
-	padding-bottom:20px;
-	text-decoration:none;
-	float:left;
 }
 
-nav{
-	float:right;
-	
-}
-.navbar{
+.nav ul {
 	overflow:hidden;
-
-
-
 }
 
-.navbar li{
-	
-	float:left;
-	
+.nav ul li{
+	margin: 0;
+	padding: 0;
+	float:left;	
 }
 
-.navbar li:hover{
-	background:#f8f9fb;
-	
+.nav ul li:hover {
+	background: #f8f9fb;
 }
 
+.nav ul li a {
+	text-decoration: none;
+	padding: 45px 25px;
+	
 
-.navbar li a{
-	text-decoration:none;
-	padding-top:45px;
-	padding-bottom:45px;
-	padding-left:25px;
-	padding-right:25px;
 	font-family: 'Open Sans', sans-serif;
-	font-size:15px;
-	color:#484c55;
-	display:inline-block;
-	
-	
-
+	font-size: 15px;
+	color: #484c55;
+	display: block;
+	border-bottom: 2px solid transparent;
 }
-
-.navbar li a:hover {
-	
-	color:#49cbcd;
-	box-shadow: inset -2px -5px 0px -2px #49cbcd;
-	
-
-}
-
-.navbar li{
+.nav ul {
 	float: right;
-	display:inline-block;
 }
 
-ul.navbar li.icon {
-	font-size:17px;
+.nav ul li a:hover {
+	color: #49cbcd;
+	border-bottom: 2px solid #49cbcd;
+}
+
+.nav ul li{
+	float: left;
+}
+
+.nav .toggle-menu {
+	position: fixed;
+	top: 40px;
+	right: 50px;
 	display: none;
-	}
+}
+
+.nav .toggle-menu button {
+	border: none;
+	background: #44c0c2;
+	color: #fff;
+	padding: 6px 10px;
+	cursor: pointer;
+	outline: none;
+}
+.nav .toggle-menu button .fa {
+	font-size: 18px;
+}
+
+.expended{
+	
+	z-index:5;
+}
+
+.main{
+	
+}
+
+.bxslider li{
+	
+	max-height:565px;
+	box-sizing:border-box;
+	overflow:hidden;
+}
+
+
+.main_heading{
+	
+	font-family: 'Open Sans';
+	font-weight:600;
+	font-size:63px;
+	color:#fff;
+	position:absolute;
+	z-index:10;
+	top:150px;
+	text-align:center;
+	
+}
+
+.main_text{
+	position:absolute;
+	top:250px;
+	text-align:center;
+	font-family:'Open Sans', sans-serif;
+	font-size:23px;
+	color:#fff;
+	
+	
+}
+
+.Learn_More{
+	position:absolute;
+	top:300px;
+	text-align:center;
+}
+
+
+.LearnMore{
+	background:transparent;
+	border:3px solid #fff;
+	border-radius:5px;
+	padding:20px 40px;
+	font-family:'Open Sans';
+	font-weight:600;
+	font-size:26px;
+	color:#fff;
+}
+
+
+.color1{
+	
+	position:relative;
+	background:#49cbcd;
+}
+.color2{
+	background:#9fc78c;
+}
+
+.color3{
+	background:#a4abc3;
+}
+
+.color4{
+	background:#a9c855;
+}
+
+.circle{
+	position:relative;
+	border-radius:50%;
+	width:100px;
+	height:100px;
+	border:3px solid #49cbcd;
+	margin:0 auto 50px auto;
+}
+
+.fa-rocket, .fa-desktop, .fa-lightbulb-o, .fa-mobile{
+	position:absolute;
+	top:25px;
+	left:25px;
+	margin: auto;
+	font-size:40px !important;
+	color:#49cbcd;
+}
+
+
+.fa-lightbulb-o{
+	top:25px;
+	left:35px;
+	
+}
+
+.fa-mobile{
+	left:37px;
+}
+
+.service1, .service2, .service3, .service4{
+	margin:70px 0px 98px 0;
+}
+
+.Custom_Designs, .Web_Design, .Blog_Pages, .Mobile_Friendly{
+	font-family: 'Open Sans', sans-serif;
+	font-size:22px;
+	color:#4e525d;
+	display:block;
+	text-align:center;
+}
+
+.text1{
+	display:inline-block;
+	text-align:center;
+	line-height:25px;
+	margin-top:30px;
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	color:#4e525d;
+	padding:0 25px;
+}
+
+.read_more{
+	display:block;
+	margin:20px auto 0px auto;
+	padding:10px 12px 10px 15px;
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	color:#fff;
+	border:none;
+	cursor:pointer;
+	border-radius:3px;
+	background:#49cbcd;
+}
