@@ -347,3 +347,21 @@ body {
 	background-image:url(../images/portfolio_pic6.png);
 		
 }
+
+.button{
+	text-align:center;
+	display:inline-block;
+	width:100%;
+}
+
+.all_works{
+	background:#49cbcd;
+	font-size:24px;
+	color:#fff;
+	font-weight:600;
+	padding:25px 42px;
+	border:none;
+	border-radius:5px;
+	cursor:pointer;
+	margin:43px 0 100px;
+}
