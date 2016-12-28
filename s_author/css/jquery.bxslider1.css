@@ -49,25 +49,16 @@
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
-.bx-wrapper .bx-prev {
-	left: 10px;
-	background: url(../images/prev.png);
-}
-
-.bx-wrapper .bx-next {
-	right: 10px;
-	background: url(../images/next.png);
-}
-
 .bx-wrapper .prev {
 	left: 20px;
 	background: url(../images/arrow1.png) no-repeat;
 }
 
 .bx-wrapper .next {
-	right: 20px;
+	right: 0px;
 	background: url(../images/arrow2.png) no-repeat;
 }
+
 
 
 .bx-wrapper .bx-controls-direction a {

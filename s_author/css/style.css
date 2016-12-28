@@ -1,5 +1,6 @@
 @font-face {font-family:"Lobster1.4";src:url("../fonts/Lobster1_4/Lobster_1_4.eot?") format("eot"),url("../fonts/Lobster1_4/Lobster_1_4.woff") format("woff"),url("../fonts/Lobster1_4/Lobster_1_4.ttf") format("truetype");font-weight:normal;font-style:normal;}
-
+@font-face {font-family: "MyriadPro-Light";src: url("../fonts/MyriadPro/MyriadPro-Light.eot");src: url("../fonts/MyriadPro/MyriadPro-Light.eot?#iefix") format("embedded-opentype"),url("../fonts/MyriadPro/MyriadPro-Light.woff") format("woff"),url("../fonts/MyriadPro/MyriadPro-Light.ttf") format("truetype")}
+  
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -61,14 +62,22 @@ html {
 }
 
 body {
-	
 	margin: 0;
 	padding: 0;
 	height: 100%; 
 	line-height: 1;
 }
 
+/* Что бы картики были адаптивны */
+/* Warning - к стати ты не правильно на PhotoShop вырезаешь картинки!!!!!!!!!!!!!!!!!! */
+img {
+	max-width: 100%;
+	height: auto;
+}
 
+.wrapper {
+	min-height: 100%; /* Задаем min высоту для того, чтобы общий блок расстягивался */
+}
 
 .container{
 	width: 1170px;
@@ -146,65 +155,86 @@ body {
 }
 
 .expended{
-	
 	z-index:5;
 }
 
-.main{
-	
+
+.banner .bx-wrapper .bx-viewport {
+	border-top: none;
+	box-shadow: none;
+	left: 0;
 }
 
-.bxslider li{
-	
-	max-height:565px;
-	box-sizing:border-box;
-	overflow:hidden;
+.banner .description-slide {
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    margin: auto;
+    padding-top: 130px;
+    color: #fff;
+}
+
+.banner .description-slide h1 {
+	font-size: 50px;
+}
+
+.banner .description-slide p {
+	font-size: 20px;
+	margin: 40px 0 70px;
+	line-height: 28px;
+}
+
+.banner .description-slide a {
+	color: #fff;
+	font-size: 19px;
+	border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
 }
 
 
-.main_heading{
+
+
+
+.banner .testimonial-slide {
 	
-	font-family: 'Open Sans';
-	font-weight:600;
-	font-size:63px;
-	color:#fff;
-	position:absolute;
-	z-index:10;
-	top:150px;
-	text-align:center;
-	
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    margin: auto;
+    padding:155px 0 108px;
 }
 
-.main_text{
-	position:absolute;
-	top:250px;
-	text-align:center;
+.testimonial-slide h2{
 	font-family:'Open Sans', sans-serif;
-	font-size:23px;
-	color:#fff;
-	
-	
+	font-size:42px;
+	color:#4e525d;
+	margin-bottom:50px;
 }
 
-.Learn_More{
-	position:absolute;
-	top:300px;
-	text-align:center;
+.testimonial-slide h3{
+	font-family:'Open Sans', sans-serif;
+	font-size:21px;
+	color:#9a8faf;
+}
+
+.testimonial-slide p{
+	font-family:'Open Sans', sans-serif;
+	font-size:19px;
+	color:#4e525d;
+	margin-bottom:48px;
 }
 
 
-.LearnMore{
-	background:transparent;
-	border:3px solid #fff;
-	border-radius:5px;
-	padding:20px 40px;
-	font-family:'Open Sans';
-	font-weight:600;
-	font-size:26px;
-	color:#fff;
-	cursor:pointer;
-}
 
+.banner .bx-pager {
+	display: none;
+}
 
 .color1{
 	
@@ -224,18 +254,20 @@ body {
 }
 
 .circle{
-	position:relative;
+	position:relative; /* Cмысла нет использовать relative */
 	border-radius:50%;
 	width:100px;
 	height:100px;
 	border:3px solid #49cbcd;
 	margin:0 auto 50px auto;
+	text-align: center;
+	padding-top: 25px;
 }
 
-.fa-rocket, .fa-desktop, .fa-lightbulb-o, .fa-mobile{
-	position:absolute;
+.fa-rocket, .fa-desktop, .fa-lightbulb-o, .fa-mobile{ /* Зачем ты position исаользуешь???*/
+	/*position:absolute; 
 	top:25px;
-	left:25px;
+	left:25px;*/
 	margin: auto;
 	font-size:40px !important;
 	color:#49cbcd;
@@ -288,11 +320,16 @@ body {
 	background:#49cbcd;
 }
 
-.wrapper{
+/*.wrapper{
+	background:#f1f1f1;
+}
+*/
+
+.portfolio, .plans {
 	background:#f1f1f1;
 }
 
-.Portfolio_Title{
+.portfolio h2 {
 	display:block;
 	text-align:center;
 	font-size:42px;
@@ -301,9 +338,28 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+.portfolio .item  {
+	padding: 0 15px;
+	margin-bottom: 25px;
+}
 
 
-.portfolio-image1,.portfolio-image2, .portfolio-image3, .portfolio-image4, .portfolio-image5, .portfolio-image6{
+/*.Portfolio_Title{
+	display:block;
+	text-align:center;
+	font-size:42px;
+	color:#4e525d;
+	padding:60px 0;
+	font-family: 'Open Sans', sans-serif;
+}*/
+
+
+
+
+
+/* Вот твой код, и зачем тебе ширина и высота, а также display:inline-block??? у тебя же во всех классов .col- float:left;  */
+
+/*.portfolio-image1,.portfolio-image2, .portfolio-image3, .portfolio-image4, .portfolio-image5, .portfolio-image6{
 	display:inline-block;
 	background:#ac94da;
 	height:314px;
@@ -311,8 +367,22 @@ body {
 	overflow:hidden;
 	margin-bottom:17px;
 }
+*/
 
-.portfolio-image1{
+
+/* Вот мой */
+.portfolio a {
+margin-bottom:17px;
+}
+
+
+
+
+
+
+/* Зачем ты картинки используешь ввиде фона, это же у тебя картинки а не фон */
+
+/*.portfolio-image1{
 	
 	background-image:url(../images/portfolio_pic1.png);
 	
@@ -346,7 +416,7 @@ body {
 	
 	background-image:url(../images/portfolio_pic6.png);
 		
-}
+}*/
 
 .button{
 	text-align:center;
@@ -365,3 +435,242 @@ body {
 	cursor:pointer;
 	margin:43px 0 100px;
 }
+
+.team{
+	margin:40px 0 110px;
+}
+
+.the_team h2{
+	display:block;
+	text-align:center;
+	font-size:42px;
+	color:#4e525d;
+	padding:100px 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.the_team h3{
+	display:block;
+	text-align:center;
+	font-size:22px;
+	color:#4e525d;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom:16px;
+}
+
+.the_team h4{
+	display:block;
+	text-align:center;
+	font-size:14px;
+	color:#4e525d;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.text2{
+	display:inline-block;
+	text-align:center;
+	line-height:25px;
+	margin-top:38px;
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	color:#4e525d;
+	padding:0 25px;
+}
+
+.circle_team{
+	display:block;
+	width:200px;
+	height:200px;
+	border-radius:50%;
+	background:#eeeef0;
+	margin: 0 auto 50px;
+	text-align:center;
+	padding-top:60px;
+}
+
+.check{
+	display:none;
+	font-family:'Open Sans';
+	font-weight:800;
+	font-size:85px;
+	color:#f46d6d;
+	margin:auto;
+}
+
+.circle_team:hover>.check{
+	display:inline-block;
+}
+
+.plans{
+	padding:120px 0 100px;
+}
+
+.basic_plan h2{
+	text-align:center;
+	background:#485460;
+	font-family:'Open Sans', sans-serif;
+	font-size:26px;
+	color:#fff;
+	padding:30px 0;
+	
+}
+
+.pro_plan h2{
+	text-align:center;
+	background:#49cbcd;
+	font-family:'Open Sans', sans-serif;
+	font-size:26px;
+	color:#fff;
+	padding:30px 0;
+	
+}
+
+.prem_plan h2{
+	text-align:center;
+	background:#485460;
+	font-family:'Open Sans', sans-serif;
+	font-size:26px;
+	color:#fff;
+	padding:30px 0;
+	
+}
+
+.basic_plan, .pro_plan, .prem_plan{
+	border-left:1px solid #ecf0f1;
+	border-right:1px solid #ecf0f1;
+	border-bottom:1px solid #ecf0f1;
+	/* margin-right:30px; */
+	padding:0 15px;
+}
+
+.basic_plan h3{
+	text-align:center;
+	background:#f8f9fb;
+	font-family:'Open Sans', sans-serif;
+	font-size:26px;
+	color:#485460;
+	padding:30px 0;
+	border-bottom:1px solid #ecf0f1;
+}
+
+.pro_plan h3{
+	text-align:center;
+	background:#f8f9fb;
+	font-family:'Open Sans', sans-serif;
+	font-size:26px;
+	color:#485460;
+	padding:30px 0;
+	border-bottom:1px solid #ecf0f1;
+}
+
+.prem_plan h3{
+	text-align:center;
+	background:#f8f9fb;
+	font-family:'Open Sans', sans-serif;
+	font-size:26px;
+	color:#485460;
+	padding:30px 0;
+	border-bottom:1px solid #ecf0f1;
+}
+
+.text3{
+	text-align:center;
+}
+
+.text3 p{
+	background:#fff;
+	padding:18px 0;
+	border-bottom:1px solid #ecf0f1;
+	color:#8c9299;
+	font-family:'Open Sans', sans-serif;
+	font-size:14px;
+}
+
+.buy_now{
+	text-align:center;
+	padding:29px 0;
+	background:#f8f9fb;
+}
+
+.buy_now button{
+	padding:15px 50px;
+	background:#788492;
+	border:none;
+	font-family:'Open Sans', sans-serif;
+	font-size:17px;
+	color:#fff;
+	font-weight:600;
+	border-radius:2px;
+	cursor:pointer;
+}
+
+.pro_plan button{
+	background:#49cbcd;
+}
+
+.contact_us{
+	background:url(../images/form_pic.png);
+	background-size:cover;
+}
+
+.contact_us h1{
+	font-family:'Open Sans', sans-serif;
+	font-size:42px;
+	color:#fff;
+	text-align:center;
+	padding:116px 0;
+}
+
+.contact_us h3{
+	font-family:'Open Sans', sans-serif;
+	font-size:24px;
+	color:#fff;
+	margin-bottom:20px;
+}
+
+.contact_us p{
+	font-family:'Open Sans', sans-serif;
+	font-size:14px;
+	color:#fff;
+	line-height: 25px;
+	margin-bottom:43px;
+}
+
+.social{
+	
+}
+
+.social a{
+	display:inline-block;
+	margin:0 15px 25px 0;
+	width:42px;
+	height:42px;
+	border-radius:50%;
+	text-align:center;
+	padding-top:1.5%;
+	font-size:23px;
+	color:#fff;
+}
+
+.social p{
+	font-family: "MyriadPro-Light";
+	font-size:14px;
+	color:#bface2;
+}
+.social span{
+	font-family:'Open Sans', sans-serif;
+	
+}
+
+.circle1{
+	background:#3b5997;
+}
+
+.circle2{
+	background:#3ec2f3;
+}
+
+.circle3{
+	background:#e44c41;
+}
+
