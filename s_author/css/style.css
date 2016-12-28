@@ -68,15 +68,13 @@ body {
 	line-height: 1;
 }
 
-/* Что бы картики были адаптивны */
-/* Warning - к стати ты не правильно на PhotoShop вырезаешь картинки!!!!!!!!!!!!!!!!!! */
 img {
 	max-width: 100%;
 	height: auto;
 }
 
 .wrapper {
-	min-height: 100%; /* Задаем min высоту для того, чтобы общий блок расстягивался */
+	min-height: 100%; 
 }
 
 .container{
@@ -254,7 +252,7 @@ img {
 }
 
 .circle{
-	position:relative; /* Cмысла нет использовать relative */
+
 	border-radius:50%;
 	width:100px;
 	height:100px;
@@ -264,10 +262,8 @@ img {
 	padding-top: 25px;
 }
 
-.fa-rocket, .fa-desktop, .fa-lightbulb-o, .fa-mobile{ /* Зачем ты position исаользуешь???*/
-	/*position:absolute; 
-	top:25px;
-	left:25px;*/
+.fa-rocket, .fa-desktop, .fa-lightbulb-o, .fa-mobile{
+	
 	margin: auto;
 	font-size:40px !important;
 	color:#49cbcd;
@@ -320,10 +316,6 @@ img {
 	background:#49cbcd;
 }
 
-/*.wrapper{
-	background:#f1f1f1;
-}
-*/
 
 .portfolio, .plans {
 	background:#f1f1f1;
@@ -344,79 +336,12 @@ img {
 }
 
 
-/*.Portfolio_Title{
-	display:block;
-	text-align:center;
-	font-size:42px;
-	color:#4e525d;
-	padding:60px 0;
-	font-family: 'Open Sans', sans-serif;
-}*/
 
-
-
-
-
-/* Вот твой код, и зачем тебе ширина и высота, а также display:inline-block??? у тебя же во всех классов .col- float:left;  */
-
-/*.portfolio-image1,.portfolio-image2, .portfolio-image3, .portfolio-image4, .portfolio-image5, .portfolio-image6{
-	display:inline-block;
-	background:#ac94da;
-	height:314px;
-	width:370px;
-	overflow:hidden;
-	margin-bottom:17px;
-}
-*/
-
-
-/* Вот мой */
 .portfolio a {
 margin-bottom:17px;
 }
 
 
-
-
-
-
-/* Зачем ты картинки используешь ввиде фона, это же у тебя картинки а не фон */
-
-/*.portfolio-image1{
-	
-	background-image:url(../images/portfolio_pic1.png);
-	
-}
-
-.portfolio-image2{
-	
-	background-image:url(../images/portfolio_pic2.png);
-	
-}
-
-.portfolio-image3{
-	
-	background-image:url(../images/portfolio_pic3.png);
-	
-}
-
-.portfolio-image4{
-	
-	background-image:url(../images/portfolio_pic4.png);
-	
-}
-
-.portfolio-image5{
-	
-	background-image:url(../images/portfolio_pic5.png);
-	
-}
-
-.portfolio-image6{
-	
-	background-image:url(../images/portfolio_pic6.png);
-		
-}*/
 
 .button{
 	text-align:center;
