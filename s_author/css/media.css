@@ -29,7 +29,13 @@
 .col-ultra-lg-11{float: left; width: 91.66666667%}
 .col-ultra-lg-12{float: left; width: 100%}
 
+textarea, input{
+	width:90%;
 }
+
+}
+
+
 
 
 @media (max-width: 1024px) {
@@ -53,7 +59,9 @@
 	padding-top:40px !important;
 }
 
-
+textarea, input{
+	width:75%;
+}
 
 }
 @media(max-width: 768px) {
@@ -109,6 +117,10 @@
 	padding-top:20px !important;
 }
 
+textarea, input{
+	width:60%;
+}
+
 }
 
 @media(max-width: 480px) {
@@ -127,6 +139,10 @@
 
 .description-slide{
 	padding-top:10px !important;
+}
+
+textarea, input{
+	width:50%;
 }
 
 }

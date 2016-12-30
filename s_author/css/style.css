@@ -226,6 +226,7 @@ img {
 	font-size:19px;
 	color:#4e525d;
 	margin-bottom:48px;
+	line-height:25px;
 }
 
 
@@ -533,12 +534,14 @@ margin-bottom:17px;
 	background:#49cbcd;
 }
 
-.contact_us{
+#contact{
 	background:url(../images/form_pic.png);
 	background-size:cover;
+	padding-bottom:50px;
+	/* height: 600px; */
 }
 
-.contact_us h1{
+#contact h2{
 	font-family:'Open Sans', sans-serif;
 	font-size:42px;
 	color:#fff;
@@ -546,14 +549,14 @@ margin-bottom:17px;
 	padding:116px 0;
 }
 
-.contact_us h3{
+#contact h4{
 	font-family:'Open Sans', sans-serif;
 	font-size:24px;
 	color:#fff;
 	margin-bottom:20px;
 }
 
-.contact_us p{
+#contact p{
 	font-family:'Open Sans', sans-serif;
 	font-size:14px;
 	color:#fff;
@@ -561,41 +564,88 @@ margin-bottom:17px;
 	margin-bottom:43px;
 }
 
-.social{
+.social-icons li{
+	display:inline-block;
 	
 }
 
-.social a{
-	display:inline-block;
-	margin:0 15px 25px 0;
-	width:42px;
-	height:42px;
-	border-radius:50%;
-	text-align:center;
+.social-icons a{
+	display:block;
+	margin:0 10px 25px 0;
+	width:45px;
+	height:45px;
+	/* border-radius:50%; */
+	/* text-align:center;
 	padding-top:1.5%;
 	font-size:23px;
-	color:#fff;
+	color:#fff; */
+	
 }
 
-.social p{
+.s-icon1{
+	background: url("../images/icons.png") no-repeat -1px -1px ;
+}
+
+.s-icon2{
+	background: url("../images/icons.png") no-repeat -57px -1px ;
+}
+
+.s-icon3{
+	background: url("../images/icons.png") no-repeat -114px -1px ;
+}
+
+.social span{
+	font-family: "MyriadPro-Light";
+	font-size:14px;
+	color:#bface2;
+	display:block;
+	line-height:25px;
+}
+
+.social span a{
 	font-family: "MyriadPro-Light";
 	font-size:14px;
 	color:#bface2;
 }
-.social span{
+
+.social .phone{
 	font-family:'Open Sans', sans-serif;
 	
 }
 
-.circle1{
-	background:#3b5997;
+textarea, input{
+	
+	margin:0 1px 31px 15px;
+	border-radius:3px;
 }
 
-.circle2{
-	background:#3ec2f3;
+textarea{
+	padding:25px 20px;
+	font-family:'Open Sans', sans-serif;
+	font-size:16px;
+	width:570px;
+	
 }
 
-.circle3{
-	background:#e44c41;
+form .submit{
+	display:inline-block;
+	background:#49cbcd;
+	font-family:'Open Sans', sans-serif;
+	font-size:22px;
+	float:right;
+	padding:19px 0;
+	color:#fff;
+	border:none;
+	cursor:pointer;
+	width:170px;
 }
 
+form input{
+	padding:19px 0 16px 20px;
+	width:270px;
+	
+}
+
+.name{
+	margin-right:10px;
+}
