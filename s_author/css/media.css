@@ -120,7 +120,9 @@ textarea, input{
 textarea, input{
 	width:60%;
 }
-
+.expended{
+	position:fixed !important;
+}
 }
 
 @media(max-width: 480px) {
@@ -144,5 +146,7 @@ textarea, input{
 textarea, input{
 	width:50%;
 }
+.sub-item, .buy_now{
+margin:0px !important;}
 
 }

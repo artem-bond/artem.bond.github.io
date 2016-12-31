@@ -66,6 +66,7 @@ body {
 	padding: 0;
 	height: 100%; 
 	line-height: 1;
+	font-family: 'Open Sans', sans-serif;
 }
 
 img {
@@ -112,9 +113,6 @@ img {
 .nav ul li a {
 	text-decoration: none;
 	padding: 45px 25px;
-	
-
-	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
 	color: #484c55;
 	display: block;
@@ -209,20 +207,17 @@ img {
 }
 
 .testimonial-slide h2{
-	font-family:'Open Sans', sans-serif;
 	font-size:42px;
 	color:#4e525d;
 	margin-bottom:50px;
 }
 
 .testimonial-slide h3{
-	font-family:'Open Sans', sans-serif;
 	font-size:21px;
 	color:#9a8faf;
 }
 
 .testimonial-slide p{
-	font-family:'Open Sans', sans-serif;
 	font-size:19px;
 	color:#4e525d;
 	margin-bottom:48px;
@@ -286,7 +281,6 @@ img {
 }
 
 .Custom_Designs, .Web_Design, .Blog_Pages, .Mobile_Friendly{
-	font-family: 'Open Sans', sans-serif;
 	font-size:22px;
 	color:#4e525d;
 	display:block;
@@ -298,7 +292,6 @@ img {
 	text-align:center;
 	line-height:25px;
 	margin-top:30px;
-	font-family: 'Open Sans', sans-serif;
 	font-size:14px;
 	color:#4e525d;
 	padding:0 25px;
@@ -308,17 +301,19 @@ img {
 	display:block;
 	margin:20px auto 0px auto;
 	padding:10px 12px 10px 15px;
-	font-family: 'Open Sans', sans-serif;
 	font-size:14px;
 	color:#fff;
 	border:none;
+	outline:none;
 	cursor:pointer;
 	border-radius:3px;
 	background:#49cbcd;
+	
+	
 }
 
 
-.portfolio, .plans {
+.portfolio, .container.plans {
 	background:#f1f1f1;
 }
 
@@ -328,7 +323,7 @@ img {
 	font-size:42px;
 	color:#4e525d;
 	padding:60px 0;
-	font-family: 'Open Sans', sans-serif;
+	
 }
 
 .portfolio .item  {
@@ -371,8 +366,8 @@ margin-bottom:17px;
 	text-align:center;
 	font-size:42px;
 	color:#4e525d;
-	padding:100px 0;
-	font-family: 'Open Sans', sans-serif;
+	margin:100px 0;
+	
 }
 
 .the_team h3{
@@ -380,7 +375,6 @@ margin-bottom:17px;
 	text-align:center;
 	font-size:22px;
 	color:#4e525d;
-	font-family: 'Open Sans', sans-serif;
 	margin-bottom:16px;
 }
 
@@ -389,7 +383,6 @@ margin-bottom:17px;
 	text-align:center;
 	font-size:14px;
 	color:#4e525d;
-	font-family: 'Open Sans', sans-serif;
 }
 
 .text2{
@@ -397,7 +390,6 @@ margin-bottom:17px;
 	text-align:center;
 	line-height:25px;
 	margin-top:38px;
-	font-family: 'Open Sans', sans-serif;
 	font-size:14px;
 	color:#4e525d;
 	padding:0 25px;
@@ -405,18 +397,17 @@ margin-bottom:17px;
 
 .circle_team{
 	display:block;
-	width:200px;
-	height:200px;
+	width:160px;
+	height:160px;
 	border-radius:50%;
 	background:#eeeef0;
 	margin: 0 auto 50px;
 	text-align:center;
-	padding-top:60px;
+	padding-top:40px;
 }
 
 .check{
 	display:none;
-	font-family:'Open Sans';
 	font-weight:800;
 	font-size:85px;
 	color:#f46d6d;
@@ -427,77 +418,56 @@ margin-bottom:17px;
 	display:inline-block;
 }
 
-.plans{
+.container.plans{
 	padding:120px 0 100px;
 }
 
-.basic_plan h2{
-	text-align:center;
-	background:#485460;
-	font-family:'Open Sans', sans-serif;
-	font-size:26px;
-	color:#fff;
-	padding:30px 0;
+.item{
 	
+	border:1px solid #ecf0f1;
 }
 
-.pro_plan h2{
-	text-align:center;
-	background:#49cbcd;
-	font-family:'Open Sans', sans-serif;
-	font-size:26px;
-	color:#fff;
-	padding:30px 0;
+.sub-item {
 	
-}
-
-.prem_plan h2{
+	background:#fff;
 	text-align:center;
-	background:#485460;
-	font-family:'Open Sans', sans-serif;
-	font-size:26px;
-	color:#fff;
-	padding:30px 0;
-	
-}
-
-.basic_plan, .pro_plan, .prem_plan{
-	border-left:1px solid #ecf0f1;
-	border-right:1px solid #ecf0f1;
-	border-bottom:1px solid #ecf0f1;
-	/* margin-right:30px; */
-	padding:0 15px;
-}
-
-.basic_plan h3{
-	text-align:center;
-	background:#f8f9fb;
-	font-family:'Open Sans', sans-serif;
-	font-size:26px;
-	color:#485460;
+	font-size:14px;
 	padding:30px 0;
 	border-bottom:1px solid #ecf0f1;
+	margin:0 15px 0 15px;
 }
 
-.pro_plan h3{
-	text-align:center;
-	background:#f8f9fb;
-	font-family:'Open Sans', sans-serif;
-	font-size:26px;
-	color:#485460;
-	padding:30px 0;
-	border-bottom:1px solid #ecf0f1;
+.sub-item span {
+	color:#8c9299;
 }
 
-.prem_plan h3{
-	text-align:center;
-	background:#f8f9fb;
-	font-family:'Open Sans', sans-serif;
-	font-size:26px;
-	color:#485460;
-	padding:30px 0;
-	border-bottom:1px solid #ecf0f1;
+
+
+
+.sub-item.item-content {
+background:#485460;
 }
+
+.sub-item.item-content.pro {
+background:#49cbcd;
+}
+
+.sub-item.item-content span {
+font-size:26px;
+color:#fff;
+}
+
+
+.sub-item.item-price {
+font-size:26px;
+background:#f8f9fb;
+}
+
+.sub-item.item-price span {
+color:#485460;
+}
+
+
 
 .text3{
 	text-align:center;
@@ -508,21 +478,22 @@ margin-bottom:17px;
 	padding:18px 0;
 	border-bottom:1px solid #ecf0f1;
 	color:#8c9299;
-	font-family:'Open Sans', sans-serif;
 	font-size:14px;
 }
 
 .buy_now{
 	text-align:center;
-	padding:29px 0;
+	margin: 0 15px 0 15px;
+	padding:30px 0;
 	background:#f8f9fb;
 }
 
-.buy_now button{
-	padding:15px 50px;
+
+
+.buy_now a{
+	padding:10px 30px;
 	background:#788492;
 	border:none;
-	font-family:'Open Sans', sans-serif;
 	font-size:17px;
 	color:#fff;
 	font-weight:600;
@@ -530,9 +501,11 @@ margin-bottom:17px;
 	cursor:pointer;
 }
 
-.pro_plan button{
+.buy_now.pro a{
 	background:#49cbcd;
 }
+
+
 
 #contact{
 	background:url(../images/form_pic.png);
@@ -542,22 +515,19 @@ margin-bottom:17px;
 }
 
 #contact h2{
-	font-family:'Open Sans', sans-serif;
 	font-size:42px;
 	color:#fff;
 	text-align:center;
-	padding:116px 0;
+	margin:116px 0;
 }
 
 #contact h4{
-	font-family:'Open Sans', sans-serif;
 	font-size:24px;
 	color:#fff;
 	margin-bottom:20px;
 }
 
 #contact p{
-	font-family:'Open Sans', sans-serif;
 	font-size:14px;
 	color:#fff;
 	line-height: 25px;
@@ -594,6 +564,10 @@ margin-bottom:17px;
 	background: url("../images/icons.png") no-repeat -114px -1px ;
 }
 
+
+.social{
+	margin-bottom:10px;
+}
 .social span{
 	font-family: "MyriadPro-Light";
 	font-size:14px;
@@ -608,41 +582,35 @@ margin-bottom:17px;
 	color:#bface2;
 }
 
-.social .phone{
-	font-family:'Open Sans', sans-serif;
-	
-}
-
 textarea, input{
 	
 	margin:0 1px 31px 15px;
 	border-radius:3px;
+	border:none;
+	outline:none;
 }
 
 textarea{
 	padding:25px 20px;
-	font-family:'Open Sans', sans-serif;
-	font-size:16px;
-	width:570px;
+	width:568px;
 	
 }
 
 form .submit{
 	display:inline-block;
 	background:#49cbcd;
-	font-family:'Open Sans', sans-serif;
 	font-size:22px;
 	float:right;
-	padding:19px 0;
+	padding:14px 0;
 	color:#fff;
 	border:none;
 	cursor:pointer;
-	width:170px;
+	width:160px;
 }
 
 form input{
 	padding:19px 0 16px 20px;
-	width:270px;
+	width:269px;
 	
 }
 
